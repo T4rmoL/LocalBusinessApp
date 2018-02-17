@@ -70,10 +70,6 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/maja1" />
 
-
-
-
-
         </LinearLayout>
 
 
@@ -82,31 +78,43 @@
     </HorizontalScrollView>
 
     <TextView
+        android:id="@+id/location"
+        android:text="@string/address"
+        style="@style/ContactView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/placeholder"/>
+
+    <TextView
+        android:id="@+id/homapage"
+        android:text="@string/web_address"
+        style="@style/ContactView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/web_page"/>
+
+    <TextView
+        android:id="@+id/phone"
+        style="@style/ContactView"
+        android:text="@string/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/phone"/>
+
+    <TextView
+        android:id="@+id/mail"
+        android:text="@string/email"
+        style="@style/ContactView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/envelope"/>
+
+    <TextView
         android:id="@+id/fb_icon"
         android:text="@string/fb_text"
         style="@style/ContactView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/facebook"/>
-
-    <TextView
-        android:id="@+id/homapage"
-        android:text="www.heamajapood.ee"
-        style="@style/ContactView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableStart="@drawable/web_page"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/phone"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/envelope"/>
-
-
 
 </LinearLayout>

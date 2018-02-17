@@ -2,4 +2,8 @@
     <string name="app_name">LocalBusinessApp</string>
     <string name="fb_text">Leia meid Facebookis</string>
     <string name="slogan_txt">Muudame suhtumist keskkonda hoolivamaks.</string>
+    <string name="web_address">www.heamajapood.ee</string>
+    <string name="phone">+ 372 740 0959</string>
+    <string name="email">info@heamajapood.ee</string>
+    <string name="address">Pepleri 32, Tartu</string>
 </resources>
