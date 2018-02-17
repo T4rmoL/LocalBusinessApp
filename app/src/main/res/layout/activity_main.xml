@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        style="@style/logoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo" />
+
+    <TextView
+        style="@style/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/slogan_txt"/>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="356dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:paddingRight="8dp"
+                android:src="@drawable/ushop3"/>
+
+            <ImageView
+                android:layout_width="356dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:paddingRight="8dp"
+                android:src="@drawable/ushop2"/>
+
+
+            <ImageView
+                android:layout_width="356dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:paddingRight="8dp"
+                android:src="@drawable/ushop1"/>
+
+            <ImageView
+                android:layout_width="356dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:paddingRight="8dp"
+                android:src="@drawable/ushop4"/>
+
+
+            <ImageView
+                android:layout_width="356dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/maja1" />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/fb_icon"
+        android:text="@string/fb_text"
+        style="@style/ContactView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/facebook"/>
+
+    <TextView
+        android:id="@+id/homapage"
+        android:text="www.heamajapood.ee"
+        style="@style/ContactView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/web_page"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/phone"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/envelope"/>
+
+
+
+</LinearLayout>
