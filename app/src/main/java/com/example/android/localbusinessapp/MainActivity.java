@@ -70,4 +70,13 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intentMail);
         }
     }
+
+    public void openMap(View view) {
+        Uri mapsUri = Uri.parse("geo:58.3737852,26.7199416,17z?q=58.3737852,26.7199416(Hea+Maja+Pood)");
+        Intent intentMap = new Intent(Intent.ACTION_VIEW, mapsUri);
+        intentMap.setPackage("com.google.android.apps.maps");
+        if (intentMap.resolveActivity(getPackageManager()) != null) {
+            startActivity(intentMap);
+        }
+    }
 }

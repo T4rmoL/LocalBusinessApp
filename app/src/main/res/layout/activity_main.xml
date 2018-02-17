@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/background"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ImageView
@@ -17,107 +17,75 @@
         style="@style/TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/slogan_txt"/>
+        android:text="@string/slogan_txt" />
 
-    <HorizontalScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginBottom="30dp"
-        android:layout_marginTop="20dp">
+    <HorizontalScrollView style="@style/ScrollViewStyle">
 
         <LinearLayout
             android:id="@+id/content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="356dp"
-                android:layout_height="150dp"
-                android:scaleType="centerCrop"
-                android:paddingRight="8dp"
-                android:src="@drawable/ushop3"/>
+                style="@style/ImageStyle"
+                android:src="@drawable/ushop3" />
 
             <ImageView
-                android:layout_width="356dp"
-                android:layout_height="150dp"
-                android:scaleType="centerCrop"
-                android:paddingRight="8dp"
-                android:src="@drawable/ushop2"/>
+                style="@style/ImageStyle"
+                android:src="@drawable/ushop2" />
 
 
             <ImageView
-                android:layout_width="356dp"
-                android:layout_height="150dp"
-                android:scaleType="centerCrop"
-                android:paddingRight="8dp"
-                android:src="@drawable/ushop1"/>
+                style="@style/ImageStyle"
+                android:src="@drawable/ushop1" />
 
             <ImageView
-                android:layout_width="356dp"
-                android:layout_height="150dp"
-                android:scaleType="centerCrop"
-                android:paddingRight="8dp"
-                android:src="@drawable/ushop4"/>
+                style="@style/ImageStyle"
+                android:src="@drawable/ushop4" />
 
 
             <ImageView
-                android:layout_width="356dp"
-                android:layout_height="150dp"
-                android:scaleType="centerCrop"
+                style="@style/ImageStyle"
                 android:src="@drawable/maja1" />
 
         </LinearLayout>
-
-
-
 
     </HorizontalScrollView>
 
     <TextView
         android:id="@+id/location"
-        android:text="@string/address"
         style="@style/ContactView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableStart="@drawable/placeholder"/>
+        android:drawableStart="@drawable/placeholder"
+        android:onClick="openMap"
+        android:text="@string/address" />
 
     <TextView
         android:id="@+id/homepage"
-        android:text="@string/web_address"
         style="@style/ContactView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:autoLink="web"
-        android:drawableStart="@drawable/web_page"/>
+        android:drawableStart="@drawable/web_page"
+        android:text="@string/web_address" />
 
     <TextView
         android:id="@+id/phone"
         style="@style/ContactView"
-        android:text="@string/phone"
+        android:drawableStart="@drawable/phone"
         android:onClick="dialNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableStart="@drawable/phone"/>
+        android:text="@string/phone" />
 
     <TextView
         android:id="@+id/mail"
-        android:text="@string/email"
         style="@style/ContactView"
+        android:drawableStart="@drawable/envelope"
         android:onClick="openMail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableStart="@drawable/envelope"/>
+        android:text="@string/email" />
 
     <TextView
         android:id="@+id/fb_icon"
-        android:text="@string/fb_text"
         style="@style/ContactView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableStart="@drawable/facebook"/>
+        android:drawableStart="@drawable/facebook"
+        android:text="@string/fb_text" />
 
 </LinearLayout>
