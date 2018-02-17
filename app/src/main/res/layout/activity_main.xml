@@ -86,17 +86,19 @@
         android:drawableStart="@drawable/placeholder"/>
 
     <TextView
-        android:id="@+id/homapage"
+        android:id="@+id/homepage"
         android:text="@string/web_address"
         style="@style/ContactView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:autoLink="web"
         android:drawableStart="@drawable/web_page"/>
 
     <TextView
         android:id="@+id/phone"
         style="@style/ContactView"
         android:text="@string/phone"
+        android:onClick="dialNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/phone"/>
@@ -105,6 +107,7 @@
         android:id="@+id/mail"
         android:text="@string/email"
         style="@style/ContactView"
+        android:onClick="openMail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/envelope"/>
