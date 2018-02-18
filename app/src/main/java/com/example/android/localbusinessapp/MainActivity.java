@@ -2,6 +2,7 @@ package com.example.android.localbusinessapp;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.support.v4.content.ContextCompat;
@@ -29,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(facebookIntent);
             }
         });
+
+//        TextView hypertxt = findViewById(R.id.homepage);
+//        hypertxt.setLinkTextColor(Color.parseColor("#000000"));
     }
     /**
      * This method is called when the Facebook icon is clicked
